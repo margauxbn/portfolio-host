@@ -1,4 +1,4 @@
-import ProjectContainer from './projectContainer/projectContainer';
+import ProjectContainer from './projectContainer/projectContainer.tsx';
 import './projects.css';
 
 function Projects() {

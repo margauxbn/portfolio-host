@@ -1,6 +1,6 @@
 import "./presentation.css"
-import ImgPresentation from "../presentation/imgPresentation/imgPresentation"
-import TitlePresentation from "./titlePresentation/titlePresentation"
+import ImgPresentation from "../presentation/imgPresentation/imgPresentation.tsx"
+import TitlePresentation from "./titlePresentation/titlePresentation.tsx"
 
 function Presentation() {
 
