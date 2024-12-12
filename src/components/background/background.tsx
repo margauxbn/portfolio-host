@@ -1,5 +1,5 @@
 import './background.css';
-import Education from './education/education';
+import Education from './education/education.tsx';
 
 function Background() {
   return (

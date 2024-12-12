@@ -1,5 +1,5 @@
-import Collaboration from './collaboration/collaboration';
-import Development from './development/development';
+import Collaboration from './collaboration/collaboration.tsx';
+import Development from './development/development.tsx';
 import './skills.css';
 
 function Skills() {
