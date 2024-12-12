@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; 
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out; 
+    border-bottom: 1px solid #fffbed;
+    box-shadow: inset 0px -10px 20px -10px #fffbed; 
+}
+  
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+  
+.navbar.visible {
+    transform: translateY(0); 
+}
+  
+.logo-navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+  
+.img-logo-navbar {
+    height: 50px;
+    cursor: pointer;
+}
+  
+.list-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fffbed;
+}  
+
+.element-list-navbar {
+    margin: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s; 
+}
+
+.element-list-navbar:hover {
+    transform: scale(1.2); 
+}
+
+.element-projets-list-navbar {
+    margin-right: 50px;
+}

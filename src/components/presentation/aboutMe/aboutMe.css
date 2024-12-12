@@ -1,0 +1,80 @@
+.container-aboutme {
+    margin: 0 100px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-aboutme:hover .line {
+    opacity: 1; 
+}
+
+.line {
+    position: absolute;
+}
+
+.line-left {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;  
+    transition: height 1.5s;
+    background: linear-gradient(to top, #8c223a, #fffbed);
+}
+
+.line-bottom {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s;
+    background: linear-gradient(to right, #8c223a, #fffbed);
+}
+
+.container-aboutme:hover .line-left {
+    height: 100%; 
+}
+
+.container-aboutme:hover .line-bottom {
+    width: 100%; 
+}
+
+@keyframes animate-left {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%; 
+    }
+}
+
+@keyframes animate-bottom {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 100%; 
+    }
+}
+
+.title-aboutme, .paragraph-aboutme {
+    color: #fffbed;
+    font-family: Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+.title-aboutme {
+    font-size: 24px;
+}
+
+.paragraph-aboutme {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .container-aboutme {
+        margin: 0 60px;
+    }
+}
